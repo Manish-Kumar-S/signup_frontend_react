@@ -9,25 +9,28 @@ function App() {
       <div className="head">Signup</div>
      <form>
        <div className="inputf">
-          <input type="text" placeholder="First Name" required></input>
+          <input type="text" name='fname' placeholder="First Name" required></input>
        </div>
        <div className="inputf">
-          <input type="text" placeholder="Last Name" required></input>
+          <input type="text" name='lname' placeholder="Last Name" required></input>
        </div>
        <div className="inputf">
-          <input type="text" placeholder="Contact Number" required></input>
+          <input type="text" name='phno' placeholder="Contact Number" required></input>
        </div>
        <div className="inputf">
-          <input type="email" placeholder="Email" required></input>
+          <input type="email" name='email' placeholder="Email" required></input>
        </div>
        <div className="inputf">
-          <input type="text" placeholder="College(if you're a student)"></input>
+          <input type="text" name='clgname' placeholder="College(if you're a student)"></input>
        </div>
        <div className="inputf">
-          <input type="text" placeholder="Password" required></input>
+          <input type="text" name='pwd' placeholder="Password" required></input>
        </div>
        <div className="inputf">
-          <input type="password" placeholder="Confirm Password" required></input>
+          <input type="password" name='cpwd' placeholder="Confirm Password" required></input>
+       </div>
+       <div className='err'>
+          This is an error message!
        </div>
        <div className='signupl'>
          <a className='links' href='#'>Signup</a>

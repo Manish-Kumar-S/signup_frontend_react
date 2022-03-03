@@ -1,31 +1,51 @@
-/* .signup {
-  display: inline;
-  flex: 1;
-  text-align: center;
-  background-color: aquamarine;
-  position: absolute;
-  padding-bottom: 1em;
-  width: 50%;
-  float: left;
-  margin-left: 4em;
-  margin-top: 3em;
-  background: rgba(0, 0, 0, 0.6);
-} */
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
-
-.flex-child-photo {
-  /* flex: 1; */
+/* .flex-child-photo {
   width: 25em;
   margin-right: 3em;
   background-image: url(images/declaration.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}  */
+
+body{
+  background-color: brown;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.flex-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 3em;
+  margin-bottom: 3em;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+
+.flex-child-signup{
+  flex: 0.5;
+  background-color: rgb(0,0,0,0.6);
+  font-family: 'Cookie';
+  justify-content: center;
+  text-align: center;
+}
+
+.flex-child-photo {
+  flex: 0.5;
+  margin-left: 2em;
+  background-image: url(images/declaration.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  /* display: none; */
 } 
 
 .head{
   color: white;
   padding-bottom: 5px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-size: 3em;
 }
 
 .links{
@@ -50,52 +70,6 @@
   background-color: rgb(176, 196, 155);
 }
 
-.flex-child-signup {
-  width: 80%;
-  padding-bottom: 1em;
-  margin-left: 5em;
-  margin-right: 5em;
-  background: rgba(0, 0, 0, 0.6);
-  text-align: center;
-}  
-
-/* .photo{
-  display: block;
-  position: static;
-  background-image: url(images/declaration.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  width: 50%;
-  height: auto;
-  float: right;
-  margin-right: 4em;
-  margin-top: 3em;
-  height: 40em;
-} */
-
-.flex-container{
-  margin-top: 3em;
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-child-photo {
-  margin-right: 20px;
-  /* width: 25em;
-  margin-right: 3em; */
-  background-image: url(images/declaration.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-body{
-  background-color: brown;
-}
-
-.head{
-  font-size: 3em;
-}
-
 .inputf{
   margin-bottom: 5px;
 }
@@ -109,21 +83,49 @@ body{
   font-size: 20px;
 }
 
+.err{
+  font-size: xx-large;
+  margin-top: 1em;
+  color: white;
+  margin-left: 5px;
+  margin-right: 5px;
+  display: none;
+}
+
+.signinl{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
 .signinl p{
   display: flex;
-  float: left;
-  margin-left: 4em;
-  font-size: large;
+  /* float: left; */
+  margin-left: 1em;
   color: white;
+  font-size: xx-large;
+}
+
+.signinl a{
+  /* float: right; */
+  margin-left: 10px;
+  margin-right: 1em;
 }
 
 .signupl{
   padding: 2em;
+
 }
 
-.signinl a{
-  float: right;
-  margin-right: 3em;
+.signupl a:hover{
+  background-color: rgb(74, 110, 37);
+  transition: 0.4s;
+}
+
+.signinl a:hover{
+  background-color: rgb(32, 32, 102);
+  transition: 0.4s;
 }
 
 .inputf input:focus{
@@ -140,42 +142,19 @@ body{
   height: 1.5em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+@media only screen and (max-device-width: 1100px) {
 
-@media screen and (min-width: 1200px){
-  .flex-container {
-    display: flex;
-    margin-bottom: 5em;
-    margin-top: 3em;
+  .flex-container{
+    margin-left: 10px;
+    margin-right: 10px;
+    flex-direction: column;
   }
 
-  .flex-container {
-    display: flex;
-    margin-bottom: 5em;
-    margin-top: 3em;
-    flex-direction: row;
+  .flex-child-signup{
+    flex: 0.5;
   }
-
   
-.flex-child-signup {
-  flex: 1;
-  margin-right: 15em;
-  padding-bottom: 1em;
-  margin-left: 12em;
-  background: rgba(0, 0, 0, 0.6);
-  text-align: center;
-}  
-
-.flex-child-photo {
-  /* flex: 1; */
-  width: 25em;
-  margin-right: 3em;
-  background-image: url(images/declaration.jpg);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-} 
-
 }
+
+
+
